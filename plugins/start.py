@@ -50,11 +50,11 @@ async def start(client, message):
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                      [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                      [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                      InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                      [[InlineKeyboardButton("🔺 UPDATE CHANNEL 🔺", url="https://t.me/llathu63035")],
+                                      [InlineKeyboardButton("MOVIES BOT ", url="https://t.me/suchitha1bot")],
+                                      [InlineKeyboardButton("SUPPORT GROUP", url='https://t.me/ntmgroup'),
+                                      InlineKeyboardButton("DEVELOPER", url='https://t.me/TG_LATHEESH')],
+                                      [InlineKeyboardButton("☕ BUY ME A COFFEE ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
                                       ]))
         return
     if id:
@@ -64,10 +64,10 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                              [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                              [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                             InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
+                                             [[InlineKeyboardButton("🔺 UPDATE CHANNEL 🔺", url="https://t.me/llathu63035")],
+                                              [InlineKeyboardButton(" MOVIES BOT ", url="https://t.me/suchitha1bot")],
+                                              [InlineKeyboardButton("SUPPORT GROUP", url='https://t.me/ntmgroup'),
+                                             InlineKeyboardButton("DEVELOPER", url='https://t.me/TG_LATHEESH')],
                                              [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
                                           ]))
             except:
@@ -77,6 +77,7 @@ async def start(client, message):
             _user_ = find_one(int(id))
             limit = _user_["uploadlimit"]
             new_limit = limit + 104857600
+
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
 	Hello {wish} {message.from_user.first_name }\n\n
